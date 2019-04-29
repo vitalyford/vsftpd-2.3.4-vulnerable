@@ -1,0 +1,92 @@
+version: '3'
+
+services:
+
+  team01:
+    build: .
+    image: vsftpd-team01
+    ports:
+    - "2001:21"
+    - "6201:6200"
+
+  team02:
+    build: .
+    image: vsftpd-team02
+    ports:
+    - "2002:21"
+    - "6202:6200"
+
+  team03:
+    build: .
+    image: vsftpd-team03
+    ports:
+    - "2003:21"
+    - "6203:6200"
+
+  team04:
+    build: .
+    image: vsftpd-team04
+    ports:
+    - "2004:21"
+    - "6204:6200"
+
+  team05:
+    build: .
+    image: vsftpd-team05
+    ports:
+    - "2005:21"
+    - "6205:6200"
+
+  team06:
+    build: .
+    image: vsftpd-team06
+    ports:
+    - "2006:21"
+    - "6206:6200"
+
+  team07:
+    build: .
+    image: vsftpd-team07
+    ports:
+    - "2007:21"
+    - "6207:6200"
+
+  team08:
+    build: .
+    image: vsftpd-team08
+    ports:
+    - "2008:21"
+    - "6208:6200"
+
+  team09:
+    build: .
+    image: vsftpd-team09
+    ports:
+    - "2009:21"
+    - "6209:6200"
+
+  team10:
+    build: .
+    image: vsftpd-team10
+    ports:
+    - "2010:21"
+    - "6210:6200"
+
+  team11:
+    build: .
+    image: vsftpd-team11
+    ports:
+    - "2011:21"
+    - "6211:6200"
+
+  team12:
+    build: .
+    image: vsftpd-team12
+    ports:
+    - "2012:21"
+    - "6212:6200"
+
+networks:
+    default:
+    internal:
+        internal: true
